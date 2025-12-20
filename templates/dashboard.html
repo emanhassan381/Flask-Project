@@ -4,11 +4,24 @@
     <title>Dashboard</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
-<body>
+<body class="dashboard-page">
 
-<div class="container">
-    <h2>Welcome 🎉 Eman Hassan</h2>
+<div class="hero" >
     
+    <nav class="navbar">
+        <div class="logo">MyWebsite</div>
+        <ul class="nav-links">
+            <li><a href="/dashboard" class="active">Home</a></li>
+            <li><a href="/profile">Profile</a></li>
+            <li><a href="/logout">Logout</a></li>
+        </ul>
+    </nav>
+
+    <div class="hero-content">
+        <h1>Welcome to our website</h1>
+        <p><h2>Discover amazing experience and create lasting memories</h2></p>
+        <a href="/features" class="hero-btn">Get Started</a>
+    </div>
 </div>
 
 </body>

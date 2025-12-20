@@ -69,6 +69,18 @@ def register():
 def dashboard():
     return render_template("dashboard.html")
 
+@app.route("/profile")
+def profile():
+    return render_template("profile.html")
+
+@app.route("/features")
+def features():
+    return render_template("features.html")
+
+@app.route("/logout")
+def logout():
+    return redirect(url_for("home"))
+
 if __name__ == "__main__":
     app.run(debug=True)
 

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Traveler Profile</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body class="profile-page">
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <ul class="nav-links">
+            <li><a href="/dashboard">Home</a></li>
+            <li><a href="/profile" class="active">Profile</a></li>
+            <li><a href="/logout">Logout</a></li>
+        </ul>
+    </nav>
+
+    <!-- Profile Form -->
+    <div class="profile-container">
+        <div class="profile-card">
+
+            <h2>Traveler Profile</h2>
+            <p class="subtitle">Tell us about your travel interests 🌍</p>
+
+            <form method="POST">
+
+                <label>What is your favorite destination?</label>
+                <input type="text" placeholder="e.g. Mountains">
+
+                <label>What type of nature do you love?</label>
+                <input type="text" placeholder="Forests, Oceans, Deserts">
+
+                <label>How many trips have you completed?</label>
+                <input type="number" placeholder="Number of trips">
+
+                <label>What is your dream destination?</label>
+                <input type="text" placeholder="e.g. Switzerland">
+
+                <label>What kind of travel do you prefer?</label>
+                <input type="text" placeholder="Adventure, Relax, Nature">
+
+                <button type="submit" class="profile-btn">Submit</button>
+
+            </form>
+
+            <a href="/dashboard" class="back-home-btn">Back to Home</a>
+
+        </div>
+    </div>
+
+</body>
+</html>
